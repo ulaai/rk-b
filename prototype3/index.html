@@ -3,6 +3,7 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="admin/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/pgwslider.css">
 	<link rel="stylesheet" type="text/css" href="assets/pgwslider.min.css">
 
@@ -20,19 +21,68 @@
 	</div>
 	<div class="col-md-12 badan">
 		<div class="col-md-8">
-		<p class="font1 tulisanKecil atas">Ruang yang bisa dipinjam menggunakan <b>ReservaRoom</b></p>
-			<ul class="pgwSlider">
-			    <li><img src="image/kelas.jpg" alt="8 Ruangan Kelas" data-description="Kapasitas 40 orang dengan proyektor dan AC"></li>
-			    <li><img src="image/lp2.jpg" alt="Laboratorium Pemrograman 2" data-description="Kapasitas 50 orang dengan sound system dan proyektor"></li>
-			    <li>
-			        <img src="image/aula.jpg" data-description="Kapasitas 100 orang dengan sound system, proyektor, dan AC">
-			        <span>Aula Teknik Informatika</span>
-			    </li>
-			    <li>
-			        <img src="image/lp.jpg" data-description="Kapasitas 50 orang dengan sound system dan proyektor">
-				    <span>Laboratorium Pemrograman</span>
-			    </li>
+			<ul class="nav nav-tabs nav-justified">
+			  <li class="active"><a href="#fasilitas" data-toggle="tab">Ruangan & Fasilitas</a></li>
+			  <li><a href="#alur" data-toggle="tab">Alur Peminjaman</a></li>
 			</ul>
+			<div class="tab-content clearfix">
+				<div class="tab-pane active fade in" id="fasilitas">
+					<!-- <p class="font1 tulisanKecil atas">Ruang yang bisa dipinjam menggunakan <b>ReservaRoom</b></p> -->
+					<ul class="pgwSlider">
+					    <li><img src="image/kelas.jpg" alt="8 Ruangan Kelas" data-description="Kapasitas 40 orang dengan proyektor dan AC"></li>
+					    <li><img src="image/lp2.jpg" alt="Laboratorium Pemrograman 2" data-description="Kapasitas 50 orang dengan sound system dan proyektor"></li>
+					    <li>
+					        <img src="image/aula.jpg" data-description="Kapasitas 100 orang dengan sound system, proyektor, dan AC">
+					        <span>Aula Teknik Informatika</span>
+					    </li>
+					    <li>
+					        <img src="image/lp.jpg" data-description="Kapasitas 50 orang dengan sound system dan proyektor">
+						    <span>Laboratorium Pemrograman</span>
+					    </li>
+					</ul>
+
+				</div>
+				<div class="tab-pane fade" id="alur">
+				<div class="panel-group" id="accordion">
+					<div class="clearfix"></div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#tc">
+					        Mahasiswa Teknik Informatika ITS
+					        <span style="float:right;" class="glyphicon glyphicon-chevron-down"></span></a>
+					      </h4>
+					    </div>
+					    <div id="tc" class="panel-collapse collapse in">
+					      <div class="panel-body">
+					      	<p>1. Login dengan akun yang tersedia. Jika belum memiliki akun, silakan register terlebih dahulu.</p>
+					      	<p>2. Klik menu <b>Reservasi</b> untuk melakukan reservasi ruangan. Lengkapi dokumen yang dibutuhkan dan isi form selengkap mungkin.</p>
+					      	<p>3. Tunggu selama 1-2 hari kerja untuk mendapatkan persetujuan. Status Reservasi bisa dilihat di menu <b>Status</b></p>
+					      	<p>4. Setelah mendapatkan persetujuan, atur janji untuk serah-terima kunci ruangan.</p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#nontc">
+					        Bukan Mahasiswa Teknik Informatika ITS (Umum)
+					        <span style="float:right;" class="glyphicon glyphicon-chevron-down"></span></a>
+					      </h4>
+					    </div>
+					    <div id="nontc" class="panel-collapse collapse">
+					      <div class="panel-body">
+					      	<p>1. Login dengan akun yang tersedia. Jika belum memiliki akun, silakan register terlebih dahulu.</p>
+					      	<p>2. Klik menu <b>Reservasi</b> untuk melakukan reservasi ruangan. Lengkapi dokumen yang dibutuhkan dan isi form selengkap mungkin.</p>
+					      	<p>3. Tunggu selama 1-2 hari kerja untuk mendapatkan persetujuan. Status Reservasi bisa dilihat di menu <b>Status</b></p>
+					      	<p>4. Setelah mendapatkan persetujuan, atur janji untuk serah-terima kunci ruangan.</p>
+					      	<p>5. Pembayaran sewa harus dilakukan saat serah-terima kunci ruangan.</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="col-md-12 center judul">
@@ -41,7 +91,7 @@
 				<div class="garis"></div>
 			</div>
 			<div class="col-md-12 center">
-				<a class="button tombol font2 jarak" href="login.php">Masuk</a>
+				<a class="button tombol font2 jarak" href="login.html">Masuk</a>
 				<p class="font1 tulisanKecil atas">Belum punya akun? <a href="daftar.html" class="font2">Daftar disini</a></p>
 			</div>
 		</div>
@@ -52,4 +102,5 @@
 	$(document).ready(function() {
     $('.pgwSlider').pgwSlider();
 });
+
 </script>
