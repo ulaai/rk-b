@@ -19,12 +19,14 @@
 				<div class="garis"></div>
 			</div>
 			<div class="col-md-12 center form-daftar">
-				<p class="font2"><input type="text" name="user" placeholder="NRP"></p>
-				<p class="font2"><input type="text" name="user" placeholder="Nama"></p>
-				<p class="font2"><input type="text" name="user" placeholder="No. Telp"></p>
-				<p class="font2"><input type="password" name="user" placeholder="Password"></p>
-				<p class="font2"><input type="password" name="user" placeholder="Re-type Password"></p>
-				<a class="button tombol font2 jarak" href="admin/index.html">Daftar</a>
+			<form role="form" action="admin/index.html" method="post">
+				<p class="font2"><input type="text" name="user" placeholder="NRP" required></p>
+				<p class="font2"><input type="text" name="user" placeholder="Nama" required></p>
+				<p class="font2"><input type="text" name="user" placeholder="No. Telp" required></p>
+				<p class="font2"><input type="password" name="user" placeholder="Password" required></p>
+				<p class="font2"><input type="password" name="user" placeholder="Re-type Password" required></p>
+				<button type="submit" class="button tombol font2 jarak">Daftar</button>
+			</form>
 			</div>
 		</div>
 	</div>

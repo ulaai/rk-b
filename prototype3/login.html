@@ -19,10 +19,12 @@
 				<div class="garis"></div>
 			</div>
 			<div class="col-md-12 center form-login">
-				<p class="font2"><input type="text" name="user" placeholder="NRP"></p>
-				<p class="font2"><input type="password" name="user" placeholder="Password"></p>
-				<a href="admin/index.html" class="button tombol font2 jarak" href="#">Masuk</a>
+			<form role="form" action="admin/index.html" method="post">
+				<p class="font2"><input type="text" name="user" placeholder="NRP" required></p>
+				<p class="font2"><input type="password" name="user" placeholder="Password" required></p>
+				<button type="submit" class="button tombol font2 jarak">Masuk</button>
 				<p class="font1 tulisanKecil atas">Belum punya akun? <a href="daftar.html" class="font2">Daftar disini</a></p>
+			</form>
 			</div>
 		</div>
 	</div>
