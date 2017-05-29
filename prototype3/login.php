@@ -5,7 +5,7 @@ $act = isset($_GET['act']) ? $_GET['act']:"";
 if ($act=="ceklogin") {
 	$g_user = $_POST['user'];
 	$g_pass = $_POST['pass'];
-	if (($g_user == "5114100076" && $g_pass=="limabelas")) {
+	if (($g_user == "5114100104" && $g_pass=="limabelas")) {
 		$_SESSION['sudahLogin']="iyasudah";
 		header("location:admin/index.html");
 	}
