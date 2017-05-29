@@ -42,11 +42,11 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../forms/index.html" class="logo">
+    <a href="../../index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>R</b>R</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Room</b>Reservation</span>
+      <span class="logo-lg"><b>Reservation</b>Room</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -193,18 +193,18 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="../profile.html" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../../../" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
+          <!-- <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -262,11 +262,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        ReservationRoom
+        Reservasi
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> ReservationRoom</a></li>
-        <li class="active">Home</li>
+        <li class="active">Reservasi</li>
       </ol>
     </section>
     <div class="col-md-6 col-md-offset-3">
@@ -276,15 +276,15 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" action="../tables/statusnew.html">
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Kegiatan</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1">
+                  <input type="text" class="form-control" required>
                 </div>
                 <div class="form-group">
                   <label>Ruangan yang Dipinjam</label>
-                  <select class="form-control select2" multiple="multiple" data-placeholder="Pilih Ruangan" style="width: 100%;">
+                  <select class="form-control select2" multiple="multiple" data-placeholder="Pilih Ruangan" style="width: 100%;" required>
                     <option>Aula</option>
                     <option>IF 105A</option>
                     <option>IF 105B</option>
@@ -298,12 +298,12 @@
                     <div class="input-group-addon">
                       <i class="fa fa-clock-o"></i>
                     </div>
-                    <input type="text" class="form-control pull-right" id="reservationtime">
+                    <input type="text" class="form-control pull-right" id="reservationtime" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Surat Perizinan</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" required>
                   <p>Masukkan file berformat .pdf tidak lebih dari 500 kb</p>
                 </div>
                 <!-- /.input group -->
