@@ -3,16 +3,37 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/pgwslider.css">
+	<link rel="stylesheet" type="text/css" href="assets/pgwslider.min.css">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/pgwslider.js"></script>
+	<script src="assets/pgwslider.min.js"></script>
+	<script src="assets/pgwslider.jquery.json"></script>
+
 </head>
-<body class="body">
+<body class="body" style="background:linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(image/class3.png) no-repeat center center fixed; height: 100%; margin: 0; background-size: cover; background-attachment: fixed;">
 	<div class="navbar">
 		<a href="index.html" class="logo font1"><b class="font2">RESERVASI</b></a>
 	</div>
 	<div class="col-md-12 badan">
-		<div class="col-md-8"></div>
+		<div class="col-md-8">
+		<p class="font1 tulisanKecil atas">Ruang yang bisa dipinjam menggunakan <b>ReservaRoom</b></p>
+			<ul class="pgwSlider">
+			    <li><img src="image/kelas.jpg" alt="Ruangan Kelas" data-description="8 kelas dengan kapasitas masing-masing 40 orang"></li>
+			    <li><img src="image/lp2.jpg" alt="Laboratorium Pemrograman 2" data-description="Laboratorium berkapasitas 50 orang yang nyaman untuk workshop dan kegiatan lainnya"></li>
+			    <li>
+			        <img src="image/aula.jpg" data-description="Aula berkapasitas 200 orang dengan sound system dan fasilitas lengkap">
+			        <span>Aula Teknik Informatika</span>
+			    </li>
+			    <li>
+			        <img src="image/lp.jpg" data-description="Laboratorium berkapasitas 50 orang yang cocok untuk workshop dan kegiatan lainnya">
+				    <span>Laboratorium Pemrograman</span>
+			    </li>
+			</ul>
+		</div>
 		<div class="col-md-4">
 			<div class="col-md-12 center judul">
 				<p class="font2 atas">Ingin Pinjam</p>
@@ -27,3 +48,8 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('.pgwSlider').pgwSlider();
+});
+</script>
