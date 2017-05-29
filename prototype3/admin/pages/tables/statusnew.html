@@ -177,7 +177,7 @@
             </ul>
           </li>
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
+         <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Fathihah Ulya</span>
@@ -262,19 +262,25 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Proses Selesai
+        Status
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> ReservationRoom</a></li>
-        <li class="active">Selesai</li>
+        <li class="active">Status</li>
       </ol>
     </section>
     <br>
     <div class="col-md-12">
     
           <div class="box">
+            <div class="box-body">
+              <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Reservasi berhasil dimasukkan!</h4>
+              </div>
+            </div>
             <div class="box-header with-border">
-              <h3 class="box-title">Daftar Selesai Peminjaman</h3>
+              <h3 class="box-title">Daftar Reservasi</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -286,19 +292,18 @@
                   <th>Kegiatan</th>
                   <th>Tanggal Mulai</th>
                   <th>Tanggal Selesai</th>
-                  <th>Perizinan</th>
-                  <th>Proposal Status</th>
-                  
+                  <th>Status</th>
+                  <th>Proposal</th>
                 </tr>
                 <tr>
                   <td>1.</td>
                   <td>Fathihah Ulya</td>
                   <td>Aula Teknik Informatika</td>
-                  <td>Makan-makan IO</td>
-                  <td>20 April 2017</td>
-                  <td>20 April 2017</td>
-                  <td>Diizinkan</td>
-                  <td>Diterima</td>
+                  <td>Kumpul IO</td>
+                  <td>3 Mei 2017</td>
+                  <td>4 Mei 2017</td>
+                  <td>Dalam Pengajuan</td>
+                  <td><a href="../../dist/pdf/1.pdf" class="btn btn-primary" role="button" download>Download</a></td>
                 </tr>
               </table>
             </div>
@@ -511,10 +516,9 @@
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
+<!-- ./wrapper -->
 
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
+<!-- jQuery 2.2.3 -->
 <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="../../bootstrap/js/bootstrap.min.js"></script>

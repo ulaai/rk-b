@@ -42,7 +42,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index.html" class="logo">
+    <a href="../../index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>R</span>
       <!-- logo for regular state and mobile devices -->
@@ -180,14 +180,14 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Fathihah Ulya</span>
+              <span class="hidden-xs">Candra Gunawan</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p>
-                  Fathihah Ulya - 5114100076
+                  Candra Gunawan - 2114100076
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -219,36 +219,36 @@
           <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Fathihah Ulya</p>
-          <small>5114100076</small>
+          <p>Candra Gunawan</p>
+          <small>2114100076</small>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">LIST MENU</li>
         <li class="treeview">
-          <a href="../../index.html">
+          <a href="../../index2.html">
             <i class="fa fa-home"></i>
             <span>Home</span>
           </a>
         </li>
         <li>
-          <a href="../schedule.html">
+          <a href="../schedule2.html">
             <i class="fa fa-calendar"></i> <span>Lihat Schedule</span>
           </a>
         </li>
         <li>
-          <a href="../forms/reservasi.html">
+          <a href="reservasi2.html">
             <i class="fa fa-book"></i> <span>Reservasi</span>
           </a>
         </li>
         <li>
-          <a href="status.html">
+          <a href="../tables/status2.html">
             <i class="fa fa-table"></i> <span>Status</span>
           </a>
         </li>
         <li>
-          <a href="finish.html">
+          <a href="../tables/finish2.html">
             <i class="fa fa-check"></i> <span>Proses Selesai</span>
           </a>
         </li>
@@ -262,57 +262,63 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Proses Selesai
+        Reservasi
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> ReservationRoom</a></li>
-        <li class="active">Selesai</li>
+        <li class="active">Reservasi</li>
       </ol>
     </section>
-    <br>
-    <div class="col-md-12">
-    
-          <div class="box">
+    <div class="col-md-6 col-md-offset-3">
+    <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Daftar Selesai Peminjaman</h3>
+              <h3 class="box-title">Form Peminjaman Ruangan</h3>
             </div>
             <!-- /.box-header -->
-            <div class="box-body">
-              <table class="table table-bordered">
-                <tr>
-                  <th style="width: 10px">No</th>
-                  <th>User</th>
-                  <th>Ruangan</th>
-                  <th>Kegiatan</th>
-                  <th>Tanggal Mulai</th>
-                  <th>Tanggal Selesai</th>
-                  <th>Perizinan</th>
-                  <th>Proposal Status</th>
-                  
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Fathihah Ulya</td>
-                  <td>Aula Teknik Informatika</td>
-                  <td>Makan-makan IO</td>
-                  <td>20 April 2017</td>
-                  <td>20 April 2017</td>
-                  <td>Diizinkan</td>
-                  <td>Diterima</td>
-                </tr>
-              </table>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div>
+            <!-- form start -->
+            <form role="form" action="../tables/statusnew2.html">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nama Kegiatan</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Ruangan yang Dipinjam</label>
+                  <select class="form-control select2" multiple="multiple" data-placeholder="Pilih Ruangan" style="width: 100%;" required>
+                    <option>Aula    - Rp200.000/Jam</option>
+                    <option>IF 105A - Rp80.000/Jam</option>
+                    <option>IF 105B - Rp80.000/Jam</option>
+                    <option>LP 1    - Rp150.000/Jam</option>
+                    <option>LP 2    - Rp100.000/Jam</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Waktu Peminjaman :</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right" id="reservationtime" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">Surat Perizinan</label>
+                  <input type="file" id="exampleInputFile" required>
+                  <p>Masukkan file berformat .pdf tidak lebih dari 500 kb</p>
+                </div>
+                <!-- /.input group -->
+              </div>
+
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+            </form>
           </div>
+        </div>
   </div>
   <!-- /.content-wrapper -->
   
@@ -511,10 +517,8 @@
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
+<!-- ./wrapper -->
 
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
 <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
@@ -543,5 +547,74 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $(".select2").select2();
+
+    //Datemask dd/mm/yyyy
+    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    //Datemask2 mm/dd/yyyy
+    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+    //Money Euro
+    $("[data-mask]").inputmask();
+
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+    );
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass: 'iradio_minimal-red'
+    });
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+
+    //Colorpicker
+    $(".my-colorpicker1").colorpicker();
+    //color picker with addon
+    $(".my-colorpicker2").colorpicker();
+
+    //Timepicker
+    $(".timepicker").timepicker({
+      showInputs: false
+    });
+  });
+</script>
+
 </body>
 </html>
